@@ -102,6 +102,13 @@ a:hover {
   padding: 36px;
 }
 
+.hero-intro {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 220px;
+  gap: 22px;
+  align-items: start;
+}
+
 .eyebrow,
 .section-tag,
 .project-kicker,
@@ -121,10 +128,10 @@ h3 {
 }
 
 h1 {
-  font-size: clamp(2.4rem, 5vw, 4.4rem);
-  line-height: 1.04;
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  line-height: 1.02;
   margin-top: 6px;
-  max-width: 9ch;
+  max-width: 8ch;
 }
 
 h2 {
@@ -193,8 +200,9 @@ h2 {
 .portrait-card {
   padding: 12px;
   background: linear-gradient(180deg, rgba(255,255,255,0.08), rgba(255,255,255,0.03));
-  width: min(58%, 210px);
-  justify-self: center;
+  width: 100%;
+  max-width: 220px;
+  justify-self: end;
 }
 
 .portrait-image {
@@ -448,8 +456,13 @@ h2 {
     max-width: none;
   }
 
+  .hero-intro {
+    grid-template-columns: 1fr;
+  }
+
   .portrait-card {
-    width: min(52%, 220px);
+    max-width: 210px;
+    justify-self: start;
   }
 
   .contact-section {
@@ -472,6 +485,10 @@ h2 {
 
   .hero {
     padding-top: 28px;
+  }
+
+  .hero-intro {
+    gap: 18px;
   }
 
   .hero-copy,
