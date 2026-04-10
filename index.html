@@ -64,11 +64,16 @@
                 </div>
                 <div class="focus-chart focus-forecast" aria-hidden="true">
                   <svg viewBox="0 0 220 140">
-                    <line x1="18" y1="116" x2="202" y2="116"></line>
-                    <line x1="18" y1="20" x2="18" y2="116"></line>
-                    <polyline class="forecast-base" points="18,98 48,88 78,90 108,72 138,78 168,56"></polyline>
-                    <polyline class="forecast-proj" points="168,56 188,42 202,34"></polyline>
-                    <circle cx="168" cy="56" r="4"></circle>
+                    <rect class="forecast-bar bar-1" x="18" y="88" width="24" height="34" rx="4"></rect>
+                    <rect class="forecast-bar bar-2" x="52" y="70" width="24" height="52" rx="4"></rect>
+                    <rect class="forecast-bar bar-3" x="86" y="78" width="24" height="44" rx="4"></rect>
+                    <rect class="forecast-bar bar-4" x="120" y="66" width="24" height="56" rx="4"></rect>
+                    <rect class="forecast-bar bar-5" x="154" y="58" width="24" height="64" rx="4"></rect>
+                    <rect class="forecast-bar bar-6" x="188" y="72" width="24" height="50" rx="4"></rect>
+
+                    <polyline class="forecast-line up-line" points="18,62 42,76 66,50 90,64 114,38 138,52 162,26 186,42 204,16"></polyline>
+                    <polyline class="forecast-line mid-line" points="8,92 36,94 64,72 92,86 120,62 148,78 176,54 206,82"></polyline>
+                    <polyline class="forecast-line down-line" points="126,54 152,74 176,60 198,88 214,82"></polyline>
                   </svg>
                 </div>
                 <div class="focus-chart focus-metric">

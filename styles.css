@@ -280,33 +280,46 @@ h2 {
   height: 100%;
 }
 
-.focus-forecast line {
-  stroke: rgba(184, 195, 222, 0.16);
-  stroke-width: 2;
+.focus-forecast .forecast-bar {
+  stroke: rgba(255,255,255,0.18);
+  stroke-width: 1.2;
 }
 
-.focus-forecast .forecast-base {
+.focus-forecast .bar-1,
+.focus-forecast .bar-2 {
+  fill: #7ed6b1;
+}
+
+.focus-forecast .bar-3,
+.focus-forecast .bar-4 {
+  fill: #ead86c;
+}
+
+.focus-forecast .bar-5,
+.focus-forecast .bar-6 {
+  fill: #78b6f3;
+}
+
+.focus-forecast .forecast-line {
   fill: none;
-  stroke: #7dd3fc;
-  stroke-width: 6;
+  stroke-width: 7;
   stroke-linecap: round;
   stroke-linejoin: round;
-  filter: drop-shadow(0 0 10px rgba(125, 211, 252, 0.28));
 }
 
-.focus-forecast .forecast-proj {
-  fill: none;
-  stroke: #a78bfa;
-  stroke-width: 6;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  stroke-dasharray: 8 8;
-  filter: drop-shadow(0 0 12px rgba(167, 139, 250, 0.28));
+.focus-forecast .up-line {
+  stroke: #59d58b;
+  filter: drop-shadow(0 0 8px rgba(89, 213, 139, 0.28));
 }
 
-.focus-forecast circle {
-  fill: #a78bfa;
-  filter: drop-shadow(0 0 8px rgba(167, 139, 250, 0.6));
+.focus-forecast .mid-line {
+  stroke: #f0c54b;
+  filter: drop-shadow(0 0 8px rgba(240, 197, 75, 0.24));
+}
+
+.focus-forecast .down-line {
+  stroke: #f06a5f;
+  filter: drop-shadow(0 0 8px rgba(240, 106, 95, 0.24));
 }
 
 .focus-wide {
