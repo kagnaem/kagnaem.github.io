@@ -233,31 +233,37 @@ h2 {
     linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0.02));
 }
 
-.focus-header {
-  display: flex;
-  gap: 8px;
-  margin-bottom: 14px;
-}
-
-.focus-header span {
-  width: 10px;
-  height: 10px;
-  border-radius: 999px;
-  background: rgba(255,255,255,0.25);
-}
-
 .focus-grid {
   display: grid;
-  grid-template-columns: 1.1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   gap: 14px;
 }
 
 .focus-chart {
-  min-height: 96px;
+  min-height: 104px;
   border-radius: 18px;
   border: 1px solid rgba(255,255,255,0.07);
   background: rgba(7, 17, 31, 0.52);
   overflow: hidden;
+}
+
+.focus-metric {
+  padding: 16px;
+}
+
+.focus-metric strong {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--ink);
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 1rem;
+}
+
+.focus-metric span {
+  display: block;
+  color: var(--muted);
+  line-height: 1.55;
+  font-size: 0.92rem;
 }
 
 .focus-bars {
@@ -265,6 +271,7 @@ h2 {
   align-items: end;
   justify-content: space-evenly;
   padding: 18px 14px 14px;
+  min-height: 140px;
 }
 
 .focus-bars i {
@@ -279,60 +286,10 @@ h2 {
 .focus-bars i:nth-child(3) { height: 40px; }
 .focus-bars i:nth-child(4) { height: 58px; }
 
-.focus-line {
-  padding: 14px;
+.focus-wide {
+  grid-column: 1 / -1;
+  min-height: 0;
 }
-
-.focus-line svg {
-  width: 100%;
-  height: 100%;
-}
-
-.focus-line polyline {
-  fill: none;
-  stroke: var(--accent);
-  stroke-width: 6;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-}
-
-.focus-donut {
-  display: grid;
-  place-items: center;
-}
-
-.donut-ring {
-  width: 72px;
-  height: 72px;
-  border-radius: 50%;
-  background: conic-gradient(var(--accent) 0 32%, var(--accent-2) 32% 70%, rgba(255,255,255,0.12) 70% 100%);
-  position: relative;
-}
-
-.donut-ring::after {
-  content: "";
-  position: absolute;
-  inset: 14px;
-  border-radius: 50%;
-  background: #0b1830;
-}
-
-.focus-cards {
-  display: grid;
-  gap: 10px;
-  padding: 14px;
-}
-
-.focus-cards span {
-  display: block;
-  height: 14px;
-  border-radius: 999px;
-  background: linear-gradient(90deg, rgba(255,255,255,0.12), rgba(141,183,255,0.35));
-}
-
-.focus-cards span:nth-child(1) { width: 86%; }
-.focus-cards span:nth-child(2) { width: 68%; }
-.focus-cards span:nth-child(3) { width: 78%; }
 
 .panel-note {
   margin: 14px 0 0;
