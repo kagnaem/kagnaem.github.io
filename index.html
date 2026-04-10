@@ -62,8 +62,14 @@
                   <strong>Insights</strong>
                   <span>EDA, interpretation, and business-facing findings</span>
                 </div>
-                <div class="focus-chart focus-bars">
-                  <i></i><i></i><i></i><i></i>
+                <div class="focus-chart focus-forecast" aria-hidden="true">
+                  <svg viewBox="0 0 220 140">
+                    <line x1="18" y1="116" x2="202" y2="116"></line>
+                    <line x1="18" y1="20" x2="18" y2="116"></line>
+                    <polyline class="forecast-base" points="18,98 48,88 78,90 108,72 138,78 168,56"></polyline>
+                    <polyline class="forecast-proj" points="168,56 188,42 202,34"></polyline>
+                    <circle cx="168" cy="56" r="4"></circle>
+                  </svg>
                 </div>
                 <div class="focus-chart focus-metric">
                   <strong>Forecasting and Modeling</strong>

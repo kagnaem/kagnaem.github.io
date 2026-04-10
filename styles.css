@@ -266,25 +266,48 @@ h2 {
   font-size: 0.92rem;
 }
 
-.focus-bars {
-  display: flex;
-  align-items: end;
-  justify-content: space-evenly;
-  padding: 18px 14px 14px;
+.focus-forecast {
+  padding: 14px;
   min-height: 140px;
+  background:
+    radial-gradient(circle at 85% 20%, rgba(125,92,255,0.2), transparent 28%),
+    radial-gradient(circle at 20% 85%, rgba(49,95,232,0.18), transparent 34%),
+    rgba(7, 17, 31, 0.52);
 }
 
-.focus-bars i {
-  display: block;
-  width: 18%;
-  border-radius: 10px 10px 4px 4px;
-  background: linear-gradient(180deg, rgba(141,183,255,0.95), rgba(92,129,219,0.88));
+.focus-forecast svg {
+  width: 100%;
+  height: 100%;
 }
 
-.focus-bars i:nth-child(1) { height: 48px; }
-.focus-bars i:nth-child(2) { height: 66px; }
-.focus-bars i:nth-child(3) { height: 40px; }
-.focus-bars i:nth-child(4) { height: 58px; }
+.focus-forecast line {
+  stroke: rgba(184, 195, 222, 0.16);
+  stroke-width: 2;
+}
+
+.focus-forecast .forecast-base {
+  fill: none;
+  stroke: #7dd3fc;
+  stroke-width: 6;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  filter: drop-shadow(0 0 10px rgba(125, 211, 252, 0.28));
+}
+
+.focus-forecast .forecast-proj {
+  fill: none;
+  stroke: #a78bfa;
+  stroke-width: 6;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-dasharray: 8 8;
+  filter: drop-shadow(0 0 12px rgba(167, 139, 250, 0.28));
+}
+
+.focus-forecast circle {
+  fill: #a78bfa;
+  filter: drop-shadow(0 0 8px rgba(167, 139, 250, 0.6));
+}
 
 .focus-wide {
   grid-column: 1 / -1;
